@@ -14,7 +14,7 @@
 		3628F0B61AFF9A7D007579BD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3628F0B51AFF9A7D007579BD /* Images.xcassets */; };
 		3628F0B91AFF9A7D007579BD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3628F0B71AFF9A7D007579BD /* LaunchScreen.xib */; };
 		3628F0C51AFF9A7D007579BD /* CommonLibrarySimpleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3628F0C41AFF9A7D007579BD /* CommonLibrarySimpleTests.m */; };
-		3628F0D71AFF9B7E007579BD /* libCommonLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3628F0D41AFF9A96007579BD /* libCommonLibrary.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		A4CFFC2C1B2FBFD2009A56C1 /* libCommonLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3628F0D41AFF9A96007579BD /* libCommonLibrary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3628F0D71AFF9B7E007579BD /* libCommonLibrary.a in Frameworks */,
+				A4CFFC2C1B2FBFD2009A56C1 /* libCommonLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +509,7 @@
 				3628F0CA1AFF9A7D007579BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3628F0CB1AFF9A7D007579BD /* Build configuration list for PBXNativeTarget "CommonLibrarySimpleTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +518,7 @@
 				3628F0CD1AFF9A7D007579BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

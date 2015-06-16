@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <UIImage+Color.h>
+#import <UIImage+Ext.h>
 
 @interface ViewController : UIViewController
 

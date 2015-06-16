@@ -10,7 +10,8 @@
 		3628F0401AFF8480007579BD /* CommonLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3628F03F1AFF8480007579BD /* CommonLibrary.h */; };
 		3628F0421AFF8480007579BD /* CommonLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 3628F0411AFF8480007579BD /* CommonLibrary.m */; };
 		3628F0481AFF8480007579BD /* libCommonLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3628F03C1AFF8480007579BD /* libCommonLibrary.a */; };
-		3628F08D1AFF9453007579BD /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 3628F08C1AFF9453007579BD /* UIImage+Color.m */; };
+		A4CFFC2F1B2FC01F009A56C1 /* NSDictionary+CommonJson.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CFFC2E1B2FC01F009A56C1 /* NSDictionary+CommonJson.m */; };
+		A4CFFC301B2FC165009A56C1 /* UIImage+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CFFC291B2FBF96009A56C1 /* UIImage+Ext.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +43,10 @@
 		3628F0411AFF8480007579BD /* CommonLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonLibrary.m; sourceTree = "<group>"; };
 		3628F0471AFF8480007579BD /* CommonLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3628F04D1AFF8480007579BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3628F08B1AFF9453007579BD /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
-		3628F08C1AFF9453007579BD /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		A4CFFC281B2FBF96009A56C1 /* UIImage+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Ext.h"; sourceTree = "<group>"; };
+		A4CFFC291B2FBF96009A56C1 /* UIImage+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Ext.m"; sourceTree = "<group>"; };
+		A4CFFC2D1B2FC01F009A56C1 /* NSDictionary+CommonJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+CommonJson.h"; sourceTree = "<group>"; };
+		A4CFFC2E1B2FC01F009A56C1 /* NSDictionary+CommonJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+CommonJson.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +89,8 @@
 		3628F03E1AFF8480007579BD /* CommonLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				3628F08A1AFF85ED007579BD /* Image relation */,
+				A4CFFC271B2FBF96009A56C1 /* Image category */,
+				A4CFFC261B2FBF88009A56C1 /* NSDictiontion category */,
 				3628F03F1AFF8480007579BD /* CommonLibrary.h */,
 				3628F0411AFF8480007579BD /* CommonLibrary.m */,
 			);
@@ -109,13 +113,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3628F08A1AFF85ED007579BD /* Image relation */ = {
+		A4CFFC261B2FBF88009A56C1 /* NSDictiontion category */ = {
 			isa = PBXGroup;
 			children = (
-				3628F08B1AFF9453007579BD /* UIImage+Color.h */,
-				3628F08C1AFF9453007579BD /* UIImage+Color.m */,
+				A4CFFC2D1B2FC01F009A56C1 /* NSDictionary+CommonJson.h */,
+				A4CFFC2E1B2FC01F009A56C1 /* NSDictionary+CommonJson.m */,
 			);
-			path = "Image relation";
+			path = "NSDictiontion category";
+			sourceTree = "<group>";
+		};
+		A4CFFC271B2FBF96009A56C1 /* Image category */ = {
+			isa = PBXGroup;
+			children = (
+				A4CFFC281B2FBF96009A56C1 /* UIImage+Ext.h */,
+				A4CFFC291B2FBF96009A56C1 /* UIImage+Ext.m */,
+			);
+			path = "Image category";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,8 +219,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4CFFC301B2FC165009A56C1 /* UIImage+Ext.m in Sources */,
 				3628F0421AFF8480007579BD /* CommonLibrary.m in Sources */,
-				3628F08D1AFF9453007579BD /* UIImage+Color.m in Sources */,
+				A4CFFC2F1B2FC01F009A56C1 /* NSDictionary+CommonJson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
