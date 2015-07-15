@@ -12,6 +12,7 @@
 		3628F0481AFF8480007579BD /* libCommonLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3628F03C1AFF8480007579BD /* libCommonLibrary.a */; };
 		A4CFFC2F1B2FC01F009A56C1 /* NSDictionary+CommonJson.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CFFC2E1B2FC01F009A56C1 /* NSDictionary+CommonJson.m */; };
 		A4CFFC301B2FC165009A56C1 /* UIImage+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CFFC291B2FBF96009A56C1 /* UIImage+Ext.m */; };
+		A4E5FE051B560AD000013A49 /* AppSettingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E5FE041B560AD000013A49 /* AppSettingHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		A4CFFC291B2FBF96009A56C1 /* UIImage+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Ext.m"; sourceTree = "<group>"; };
 		A4CFFC2D1B2FC01F009A56C1 /* NSDictionary+CommonJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+CommonJson.h"; sourceTree = "<group>"; };
 		A4CFFC2E1B2FC01F009A56C1 /* NSDictionary+CommonJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+CommonJson.m"; sourceTree = "<group>"; };
+		A4E5FE031B560AD000013A49 /* AppSettingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSettingHelper.h; sourceTree = "<group>"; };
+		A4E5FE041B560AD000013A49 /* AppSettingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppSettingHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,7 @@
 		3628F03E1AFF8480007579BD /* CommonLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				A4E5FE021B560AC200013A49 /* AppSettingHelper */,
 				A4CFFC271B2FBF96009A56C1 /* Image category */,
 				A4CFFC261B2FBF88009A56C1 /* NSDictiontion category */,
 				3628F03F1AFF8480007579BD /* CommonLibrary.h */,
@@ -129,6 +133,15 @@
 				A4CFFC291B2FBF96009A56C1 /* UIImage+Ext.m */,
 			);
 			path = "Image category";
+			sourceTree = "<group>";
+		};
+		A4E5FE021B560AC200013A49 /* AppSettingHelper */ = {
+			isa = PBXGroup;
+			children = (
+				A4E5FE031B560AD000013A49 /* AppSettingHelper.h */,
+				A4E5FE041B560AD000013A49 /* AppSettingHelper.m */,
+			);
+			path = AppSettingHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4E5FE051B560AD000013A49 /* AppSettingHelper.m in Sources */,
 				A4CFFC301B2FC165009A56C1 /* UIImage+Ext.m in Sources */,
 				3628F0421AFF8480007579BD /* CommonLibrary.m in Sources */,
 				A4CFFC2F1B2FC01F009A56C1 /* NSDictionary+CommonJson.m in Sources */,

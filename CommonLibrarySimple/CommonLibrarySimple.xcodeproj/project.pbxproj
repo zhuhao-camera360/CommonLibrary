@@ -14,6 +14,9 @@
 		3628F0B61AFF9A7D007579BD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3628F0B51AFF9A7D007579BD /* Images.xcassets */; };
 		3628F0B91AFF9A7D007579BD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3628F0B71AFF9A7D007579BD /* LaunchScreen.xib */; };
 		3628F0C51AFF9A7D007579BD /* CommonLibrarySimpleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3628F0C41AFF9A7D007579BD /* CommonLibrarySimpleTests.m */; };
+		A4CE5DF41B54E26C006316C8 /* vip@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4CE5DF31B54E26C006316C8 /* vip@2x.jpg */; };
+		A4CE5DF61B54EAC3006316C8 /* 100.png in Resources */ = {isa = PBXBuildFile; fileRef = A4CE5DF51B54EAC3006316C8 /* 100.png */; };
+		A4CE5DF81B54F0ED006316C8 /* markimage@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4CE5DF71B54F0ED006316C8 /* markimage@2x.jpg */; };
 		A4CFFC2C1B2FBFD2009A56C1 /* libCommonLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3628F0D41AFF9A96007579BD /* libCommonLibrary.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +66,9 @@
 		3628F0C31AFF9A7D007579BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3628F0C41AFF9A7D007579BD /* CommonLibrarySimpleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonLibrarySimpleTests.m; sourceTree = "<group>"; };
 		3628F0CE1AFF9A96007579BD /* CommonLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CommonLibrary.xcodeproj; path = ../CommonLibrary/CommonLibrary.xcodeproj; sourceTree = "<group>"; };
+		A4CE5DF31B54E26C006316C8 /* vip@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "vip@2x.jpg"; sourceTree = "<group>"; };
+		A4CE5DF51B54EAC3006316C8 /* 100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 100.png; sourceTree = "<group>"; };
+		A4CE5DF71B54F0ED006316C8 /* markimage@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "markimage@2x.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,9 @@
 			isa = PBXGroup;
 			children = (
 				3628F0AC1AFF9A7D007579BD /* AppDelegate.h */,
+				A4CE5DF71B54F0ED006316C8 /* markimage@2x.jpg */,
+				A4CE5DF51B54EAC3006316C8 /* 100.png */,
+				A4CE5DF31B54E26C006316C8 /* vip@2x.jpg */,
 				3628F0AD1AFF9A7D007579BD /* AppDelegate.m */,
 				3628F0AF1AFF9A7D007579BD /* ViewController.h */,
 				3628F0B01AFF9A7D007579BD /* ViewController.m */,
@@ -257,9 +266,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4CE5DF81B54F0ED006316C8 /* markimage@2x.jpg in Resources */,
 				3628F0B41AFF9A7D007579BD /* Main.storyboard in Resources */,
+				A4CE5DF61B54EAC3006316C8 /* 100.png in Resources */,
 				3628F0B91AFF9A7D007579BD /* LaunchScreen.xib in Resources */,
 				3628F0B61AFF9A7D007579BD /* Images.xcassets in Resources */,
+				A4CE5DF41B54E26C006316C8 /* vip@2x.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +439,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = CommonLibrarySimple/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-Objc",
@@ -446,6 +459,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = CommonLibrarySimple/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-Objc",

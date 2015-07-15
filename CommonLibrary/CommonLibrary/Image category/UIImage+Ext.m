@@ -36,6 +36,65 @@
     return theImage;
 }
 
+#pragma mark -
+#pragma mark - 水印
+
++ (UIImage *)waterMarkImageWithImage:(UIImage*)sourceImage info:(NSString*)text
+{
+    
+    int imageW = sourceImage.size.width;
+    int imageH = sourceImage.size.height;
+    NSInteger fontSize = 20;
+    
+    CGSize size = [self boundingRectWithText:text size:CGSizeMake(imageW, 20) fontSize:fontSize];
+    CGPoint point = CGPointMake(imageW - size.width - 10, imageH - size.height - 10);
+    
+    UIImage *waterImage = [self waterMarkImageWithImage:sourceImage info:text atPoint:point];
+    
+    return waterImage;
+}
+
++ (UIImage *)waterMarkImageWithImage:(UIImage*)sourceImage info:(NSString*)text atPoint:(CGPoint)point
+{
+
+    NSInteger fontSize = 20;
+    
+    UIGraphicsBeginImageContextWithOptions(sourceImage.size, NO, /*[UIScreen mainScreen].scale*/0);
+    
+    [sourceImage drawAtPoint:CGPointZero];
+    
+    
+    NSDictionary* dict=@{NSFontAttributeName:[UIFont fontWithName:@"Arial-BoldItalicMT" size:fontSize],NSForegroundColorAttributeName:[UIColor redColor]};
+    [text drawAtPoint:point withAttributes:dict];
+    
+    UIImage *waterImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return waterImage;
+}
+
+
++ (UIImage *)waterMarkImageWithImage:(UIImage*)sourceImage
+                           markImage:(UIImage*)markImage
+                             atPoint:(CGPoint)point
+                          waterAlpha:(CGFloat)alpha
+{
+    UIGraphicsBeginImageContextWithOptions(sourceImage.size, NO, /*[UIScreen mainScreen].scale*/0);
+    
+    [sourceImage drawAtPoint:CGPointZero];
+  
+    [markImage drawAtPoint:point blendMode:kCGBlendModeNormal alpha:alpha];
+    
+    UIImage *waterImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return waterImage;
+}
+
+
+#pragma mark -
+#pragma mark - 模糊
+
 /**
  *  模糊图片
  *
@@ -150,5 +209,23 @@
     
     return returnImage;
 }
+
+#pragma mark -
+#pragma mark - private
+
++ (CGSize)boundingRectWithText:(NSString*)text size:(CGSize)size fontSize:(NSInteger)fontSize
+{
+    NSDictionary *attribute = @{NSFontAttributeName: [UIFont systemFontOfSize:fontSize]};
+    
+    CGSize retSize = [text boundingRectWithSize:size
+                                             options:
+                      NSStringDrawingUsesLineFragmentOrigin
+                                          attributes:attribute
+                                             context:nil].size;
+    
+    return retSize;
+}
+
+
 
 @end

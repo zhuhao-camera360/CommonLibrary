@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <UIImage+Ext.h>
+#import <AppSettingHelper/AppSettingHelper.h>
 
 @interface ViewController : UIViewController
 
